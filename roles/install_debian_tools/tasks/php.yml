@@ -1,5 +1,23 @@
 - name : Install PHP
   apt:
-    name: php
+    name: php8.0
     state: present
   become: yes
+
+- name: Install PHP modules
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+    name:
+      - php8.0-gd
+      - php8.0-gmp
+      - php8.0-intl
+      - php8.0-ldap
+      - php8.0-mbstring
+      - php8.0-simplexml
+      - php8.0-xml
+      - php8.0-snmp
+
+  become: yes
+    
+
