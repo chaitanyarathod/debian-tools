@@ -1,0 +1,6 @@
+Tasks:  This directory will contain the main tasks file for the role. Tasks define what actions should be performed by the role.
+Handlers: This directory will contain handlers that are used to trigger actions based on certain events.
+Files: If the role requires additional files to be copied to the remote hosts, we can place them in this directory
+Vars: To store variables specific to this role
+Templates: If your role uses Jinja2 templates, place them in this directory.
+Defaults: This directory contains the default variables for the role.

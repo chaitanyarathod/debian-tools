@@ -1,0 +1,9 @@
+- name: Run the playbook to install cacti and other tools
+  hosts: localhost
+  become: yes
+
+
+  tasks:
+    - name: Include main script
+      include_tasks: main.yml
+

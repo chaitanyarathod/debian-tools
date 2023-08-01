@@ -1,0 +1,19 @@
+- include: cacti.yml
+  ignore_errors: '{{ ansible_check_mode }}'
+  tags:
+  - common
+  - tools
+
+- include: install_common_tools.yml
+  ignore_errors: '{{ ansible_check_mode }}'
+  tags:
+  - common
+  - tools
+
+- include: php.yml
+  ignore_errors: '{{ ansible_check_mode }}'
+  tags:
+  - common
+  - tools
+
+

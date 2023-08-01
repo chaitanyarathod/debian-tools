@@ -1,0 +1,5 @@
+- include: debian-tools.yml
+  ignore_errors: '{{ansible_check_mode}}'
+  tags:
+    - common
+    - tools
